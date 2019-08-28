@@ -2,7 +2,7 @@ resource "azurerm_resource_group" "myresourcegroup" {
   name     = "${var.prefix}-workshop"
   location = "${var.location}"
 }
-module "web_app_container" {
+module "web-app-container" {
   source              = "app.terraform.io/YOURORGNAME/web-app-container/azurerm"
   name                = "${var.prefix}"
   port                = "80"
