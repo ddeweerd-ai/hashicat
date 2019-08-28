@@ -12,5 +12,5 @@ module "web_app_container" {
   container_image     = "scarolan/palacearcade"
 }
 output "container_app_url" {
-  value = "http://${module.web-app-container.hostname}"
+  value = "http://${module.web_app_container.hostname}"
 }
