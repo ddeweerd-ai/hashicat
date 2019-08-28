@@ -113,6 +113,9 @@ resource "azurerm_virtual_machine" "catapp" {
   os_profile_linux_config {
     disable_password_authentication = false
   }
+  tags = {
+    environment = "production"
+  }
 }
 
 # We're using a little trick here so we can run the provisioner without 
